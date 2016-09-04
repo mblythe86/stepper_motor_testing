@@ -119,7 +119,7 @@ int main() {
     PORTC = seq[seq_idx] << PC1;
     if(++seq_idx == 8){
       seq_idx = 0;
-      if(++count == 513){
+      if(++count == 512){
         count = 0;
         lcd_write_string(PSTR("rev: "));
         lcd_write_int16(++rev);
